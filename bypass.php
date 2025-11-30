@@ -327,7 +327,7 @@ if (is_resource($process)) {
 
 logf("Refactoring parameters...");
 
-$data = json_decode(decryptData($args), true);
+$data = var_dump($args);
 
 // V816 is the special identity for HyperOS in MIUI version
 $data["rom_version"] = str_replace("V816", "V14", $data["rom_version"]);
